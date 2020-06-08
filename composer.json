@@ -1,0 +1,46 @@
+{
+    "name": "laravel-addons/command-daemonizer",
+    "type": "library",
+    "description": "Laravel console command daemonizer with gracefully shutdown",
+    "keywords": ["Laravel", "console command", "gracefully shutdown", "daemon", "daemonizer"],
+    "homepage": "https://github.com/laravel-addons/command-daemonizer",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vyacheslav Startsev",
+            "email": "vyacheslav.startsev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "illuminate/console": "^5.0|^6.0|^7.0",
+        "illuminate/support": "^5.0|^6.0|^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.5",
+        "roave/security-advisories": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelAddons\\CommandDaemonizer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LaravelAddons\\CommandDaemonizer\\Test\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelAddons\\CommandDaemonizer\\CommandDaemonizerServiceProvider"
+            ]
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<phpunit bootstrap="vendor/autoload.php" colors="true">
+    <testsuites>
+        <testsuite name="common">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+    <filter>
+        <whitelist>
+            <directory>src</directory>
+        </whitelist>
+    </filter>
+    <logging>
+        <log type="coverage-html" target="build/logs/coverage"/>
+    </logging>
+</phpunit>
