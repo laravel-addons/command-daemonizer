@@ -1,8 +1,8 @@
 {
     "name": "laravel-addons/command-daemonizer",
     "type": "library",
-    "description": "Laravel console command daemonizer with gracefully shutdown",
-    "keywords": ["Laravel", "console command", "gracefully shutdown", "daemon", "daemonizer"],
+    "description": "Laravel/Lumen console command daemonizer with graceful shutdown",
+    "keywords": ["Laravel", "console", "command", "graceful shutdown", "daemon", "daemonizer"],
     "homepage": "https://github.com/laravel-addons/command-daemonizer",
     "license": "MIT",
     "authors": [
