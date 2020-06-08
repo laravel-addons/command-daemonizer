@@ -126,9 +126,9 @@ class Worker
      * Pause the worker for the current loop.
      *
      * @param WorkerOptions $options
-     * @param int $lastRestart
+     * @param int|null $lastRestart
      */
-    protected function pauseWorker(WorkerOptions $options, int $lastRestart): void
+    protected function pauseWorker(WorkerOptions $options, ?int $lastRestart): void
     {
         $this->sleep($options->getSleep() > 0 ? $options->getSleep() : 1);
 
