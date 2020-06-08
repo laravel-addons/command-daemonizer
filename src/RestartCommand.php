@@ -22,7 +22,7 @@ class RestartCommand extends Command
      *
      * @var string
      */
-    protected $description = 'Restart smart commands';
+    protected $description = 'Restart daemonized commands';
 
     /**
      * Execute the console command.
