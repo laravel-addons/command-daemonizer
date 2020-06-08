@@ -39,8 +39,17 @@ abstract class DaemonCommand extends Command
      */
     public function handle(Worker $worker, CacheContract $cache): void
     {
+        $this->init();
         $worker->setCache($cache);
         $worker->daemon($this, $this->gatherWorkerOptions());
+    }
+
+    /**
+     * For override in inherited classes
+     */
+    protected function init(): void
+    {
+        //
     }
 
     /**
