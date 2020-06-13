@@ -6,6 +6,12 @@
 ```shell script
 composer require laravel-addons/command-daemonizer
 ```
+Laravel will automatically add the service provider `LaravelAddons\CommandDaemonizer\CommandDaemonizerServiceProvider` to the file `config/app.php` in `providers` option.
+
+In Lumen, you MUST manually register the service provider `\LaravelAddons\CommandDaemonizer\CommandDaemonizerServiceProvider` in `bootstrap/app.php` file:
+```php
+$app->register(LaravelAddons\CommandDaemonizer\CommandDaemonizerServiceProvider::class);
+``` 
 
 ### How to use
 For example, run kafka consumer
