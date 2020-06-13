@@ -22,6 +22,8 @@ class KafkaMessageConsumer extends DaemonCommand
 {
     private $config;
     private $consumer;
+
+    protected $signature = 'kafka-consumer';
     
     public function __construct(array $config)
     {
